@@ -1,0 +1,18 @@
+# LocalWP & System files
+conf/
+logs/
+.DS_Store
+
+# WordPress Core (No se versiona, es código de terceros)
+app/public/wp-admin/
+app/public/wp-includes/
+app/public/*.php
+!app/public/wp-config-sample.php
+
+# Security & Config (Datos sensibles de DB local)
+app/public/wp-config.php
+app/public/.htaccess
+
+# EXCEPCIONES: Lo que SÍ queremos en el repo
+!app/public/wp-content/
+!app/sql/
